@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Socket.IO chat</title>
+    <style>
+        body {
+            margin: 0;
+
+            padding: 10px;
+            background-image: url(https://i.pinimg.com/originals/7e/fe/da/7efeda7a2cba85667df579aff51591a7.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .house {
+            width: 600px;
+            height: 1000px;
+            border: 2px solid black;
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 200px;
+            padding: 10px;
+            justify-content: flex-start;
+            align-items: flex-start;
+            background-color: black;
+        }
+
+        .window {
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            margin: 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #5b5757;
+        }
+
+        .connect {
+            display: none;
+            background-image: url(static/connect.png);
+        }
+
+        .disconnect {
+            background-image: url(static/disconnect.png);
+        }
+
+        .img {
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 300px;
+            height: 350px;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .img:hover {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <button id="connect" class="img connect"></button>
+    <button id="disconnect" class="img disconnect"></button>
+    <div class="house">
+        <div class="window sixth">6</div>
+        <div class="window sixth">6</div>
+        <div class="window sixth">6</div>
+        <div class="window sixth">6</div>
+        <div class="window sixth">6</div>
+        <div class="window fifth">5</div>
+        <div class="window fifth">5</div>
+        <div class="window fifth">5</div>
+        <div class="window fifth">5</div>
+        <div class="window fifth">5</div>
+        <div class="window fourth">4</div>
+        <div class="window fourth">4</div>
+        <div class="window fourth">4</div>
+        <div class="window fourth">4</div>
+        <div class="window fourth">4</div>
+        <div class="window third">3</div>
+        <div class="window third">3</div>
+        <div class="window third">3</div>
+        <div class="window third">3</div>
+        <div class="window third">3</div>
+        <div class="window second">2</div>
+        <div class="window second">2</div>
+        <div class="window second">2</div>
+        <div class="window second">2</div>
+        <div class="window second">2</div>
+        <div class="window first">1</div>
+        <div class="window first">1</div>
+        <div class="window first">1</div>
+        <div class="window first">1</div>
+        <div class="window first">1</div>
+    </div>
+
+
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        const socket = io();
+
+        // Функция отключения клиента
+
+        const disconnectClient = () => {
+
+            socket.disconnect();
+
+            console.log('Клиент отключен от сервера');
+            document.getElementById('disconnect').style.display = 'none';
+            document.getElementById('connect').style.display = 'block';
+
+        };
+
+        const connectClient = ()=>{
+            socket.connect();
+            console.log('Клиент подключен к серверу');
+            document.getElementById('connect').style.display = 'none';
+            document.getElementById('disconnect').style.display = 'block';
+        }
+
+
+        document.getElementById('disconnect').addEventListener('click', disconnectClient);
+        document.getElementById('connect').addEventListener('click', connectClient);
+
+        function setWindowColorByFloor(config) {
+            var windowsByFloor = document.getElementsByClassName(config.floor);
+
+
+            for (var i = 0; i < windowsByFloor.length; i++) {
+              
+                windowsByFloor[i].style.backgroundColor = config.backgroundColor;
+            }
+        }
+
+        socket.on('set color', (config) => {
+
+            setWindowColorByFloor(config);
+
+        })
+    </script>
+</body>
+
+</html>

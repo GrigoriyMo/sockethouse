@@ -1,0 +1,17 @@
+{
+  "name": "sockethouse",
+  "version": "1.0.0",
+  "description": "The training project on the topic of socket ws.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@socket.io/cluster-adapter": "^0.2.2",
+    "express": "^4.21.2",
+    "socket.io": "^4.8.1"
+  }
+}
