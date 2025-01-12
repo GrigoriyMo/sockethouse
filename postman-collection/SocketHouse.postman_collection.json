@@ -1,0 +1,368 @@
+{
+	"info": {
+		"_postman_id": "64596a28-fb2a-407e-a38b-2901aec88438",
+		"name": "SocketHouse",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5008583"
+	},
+	"item": [
+		{
+			"name": "Switch On",
+			"item": [
+				{
+					"name": "1 floor",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"floor\": \"first\",\n    \"backgroundColor\": \"#eae322\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/color/set",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"color",
+								"set"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "2 floor",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"floor\": \"second\",\n    \"backgroundColor\": \"#eae322\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/color/set",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"color",
+								"set"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "3st floo",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"floor\": \"third\",\n    \"backgroundColor\": \"#eae322\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/color/set",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"color",
+								"set"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "4st floor",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"floor\": \"fourth\",\n    \"backgroundColor\": \"#eae322\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/color/set",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"color",
+								"set"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "6st floor",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"floor\": \"sixth\",\n    \"backgroundColor\": \"#eae322\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/color/set",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"color",
+								"set"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "5st floor",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"floor\": \"fifth\",\n    \"backgroundColor\": \"#8905f7\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/color/set",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"color",
+								"set"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Switch Off",
+			"item": [
+				{
+					"name": "1 floor Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"floor\": \"first\",\n    \"backgroundColor\": \"#5b5757\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/color/set",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"color",
+								"set"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "2 floor Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"floor\": \"second\",\n    \"backgroundColor\": \"#5b5757\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/color/set",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"color",
+								"set"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "3st floo Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"floor\": \"third\",\n    \"backgroundColor\": \"#5b5757\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/color/set",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"color",
+								"set"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "4st floor Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"floor\": \"fourth\",\n    \"backgroundColor\": \"#5b5757\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/color/set",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"color",
+								"set"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "6st floor Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"floor\": \"sixth\",\n    \"backgroundColor\": \"#5b5757\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/color/set",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"color",
+								"set"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "5st floor Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"floor\": \"fifth\",\n    \"backgroundColor\": \"#5b5757\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/color/set",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"color",
+								"set"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
