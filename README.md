@@ -1,6 +1,7 @@
 # Sockethouse
 The training project on the topic of socket ws.
 # Installation
+    mkdir myfolder
     git clone https://github.com/GrigoriyMo/sockethouse.git myfolder
     cd myfolder
     npm install
